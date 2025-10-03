@@ -1,10 +1,5 @@
 version: 1.0
-runtime: python3
-build:
-  commands:
-    build:
-      - echo "Building with Python 3.11"
-      - python3 --version
+runtime: python311
 run:
   runtime-version: 3.11
   command: python3 aws_fx_minimal_final.py
