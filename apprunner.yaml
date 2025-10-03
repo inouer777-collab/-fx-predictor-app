@@ -1,10 +1,5 @@
 version: 1.0
 runtime: python311
-build:
-  commands:
-    build:
-      - echo "Phase 2.1: Building with requests library"
-      - pip3 install -r requirements.txt
 run:
   command: python3 aws_fx_phase2_1.py
   network:
