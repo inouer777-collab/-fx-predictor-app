@@ -1,11 +1,11 @@
 version: 1.0
-runtime: python3
+runtime: python311
 build:
   commands:
     build:
-      - echo "ビルド開始"
+      - echo "Phase 2.1: Building with requests library"
+      - pip3 install -r requirements.txt
 run:
-  command: python aws_fx_minimal_final.py
+  command: python3 aws_fx_phase2_1.py
   network:
-    port: 8443
-    env: PORT
+    port: 808
