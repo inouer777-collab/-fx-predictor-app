@@ -1,5 +1,9 @@
 version: 1.0
 runtime: python311
+build:
+  commands:
+    build:
+      - pip3 install requests==2.31.0
 run:
   command: python3 aws_fx_phase2_1.py
   network:
