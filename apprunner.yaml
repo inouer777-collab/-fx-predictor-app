@@ -5,8 +5,3 @@ run:
   command: python3 aws_fx_minimal_final.py
   network:
     port: 8080
-  env:
-    - name: PORT
-      value: "8080"
-    - name: PYTHONUNBUFFERED
-      value: "1"
