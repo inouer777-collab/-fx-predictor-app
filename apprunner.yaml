@@ -3,9 +3,18 @@ runtime: python3
 build:
   commands:
     build:
-      - echo "ビルド開始"
+      - echo "Building FX Prediction App - Ultimate Edition"
+      - echo "Python version:"
+      - python3 --version
+      - echo "No external dependencies - using standard library only"
+      - echo "Build completed successfully"
 run:
-  command: python aws_fx_minimal_final.py
+  runtime-version: 3.9
+  command: python3 aws_fx_minimal_final.py
   network:
-    port: 8443
-    env: PORT
+    port: 8080
+  env:
+    - name: PORT
+      value: "8080"
+    - name: PYTHONUNBUFFERED
+      value: "1"
