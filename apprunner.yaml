@@ -1,6 +1,0 @@
-version: 1.0
-runtime: python311
-run:
-  command: python3 aws_fx_minimal_final.py
-  network:
-    port: 8080
