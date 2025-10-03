@@ -3,7 +3,7 @@ runtime: python3
 build:
   commands:
     build:
-      - echo "Installing dependencies..."
+      - echo "依存関係をインストールしています..."
       - pip install -r requirements.txt
 run:
   runtime-version: 3.9
@@ -11,7 +11,6 @@ run:
   network:
     port: 8443
     env: PORT
-  environment:
-    variables:
-      FLASK_ENV: production
-      PORT: 8443
+  env:
+    FLASK_ENV: production
+    PORT: 8443
